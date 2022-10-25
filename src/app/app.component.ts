@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'barcos-web';
+  subtitle = 'Aplicacion que muestra barcos por pantalla con una breve descripcion de los barcos';
 }
