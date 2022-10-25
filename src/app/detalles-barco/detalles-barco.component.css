@@ -8,3 +8,7 @@
   margin: 16px;
   display: flex;
 }
+
+* {
+  padding: 20px;
+}
