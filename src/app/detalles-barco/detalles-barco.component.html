@@ -1,8 +1,10 @@
-<div *ngIf="barco">
-  <h2>Detalles del barco: {{barco.nombre}}</h2>
-  <p>id: {{barco.id}}</p>
-  <p>nombre: {{barco.nombre}}</p>
-  <p>tipo: {{barco.tipo}}</p>
-  <img src="${{barco.imagen}}">
-  <!-- Añadir imagen despues -->
+<div class="detalles-div">
+  <div *ngIf="barco" >
+    <img src="${{barco.imagen}}" class="estilo-imagen">
+    <h2>Detalles del barco: {{barco.nombre}}</h2>
+    <p>id: {{barco.id}}</p>
+    <p>nombre: {{barco.nombre}}</p>
+    <p>tipo: {{barco.tipo}}</p>
+    <!-- Añadir imagen despues -->
+  </div>
 </div>

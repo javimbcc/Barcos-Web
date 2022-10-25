@@ -1,0 +1,10 @@
+.estilo-imagen {
+  width: 250px;
+  height: 200px;
+}
+
+.detalles-div {
+  flex-direction: row;
+  margin: 16px;
+  display: flex;
+}
