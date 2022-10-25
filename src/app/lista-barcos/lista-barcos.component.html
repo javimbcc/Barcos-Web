@@ -1,1 +1,11 @@
-<p>lista-barcos works!</p>
+<div>
+  <h2>Mis barcos</h2>
+  <ul class="barcos">
+    <li *ngFor="let barco of barcos">
+      <button [class.selected]="barco === barcoSeleccionado" type="button" (click)="onSelect(barco)">
+        <span class="badge">{{barco.id}}</span>
+        <span class="name">{{barco.nombre}}</span>
+      </button>
+    </li>
+  </ul>
+</div>
