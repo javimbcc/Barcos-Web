@@ -8,8 +8,8 @@
         (click)="onSelect(barco)"
       >
         <a class="a-class" routerLink="/detalles-barco/{{barco.id}}">
-          <span class="badge">{{ barco.id }}</span>
-          <span class="name">{{ barco.nombre }}</span>
+          <span class="badge" routerLink="/detalles-barco/{{barco.id}}">{{ barco.id }}</span>
+          <span class="name" routerLink="/detalles-barco/{{barco.id}}">{{ barco.nombre }}</span>
         </a>
       </button>
     </p>
