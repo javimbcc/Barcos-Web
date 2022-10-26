@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'barcos-web';
+  title = 'Web de barcos';
   subtitle = 'Aplicacion que muestra barcos por pantalla con una breve descripcion de los barcos';
 }

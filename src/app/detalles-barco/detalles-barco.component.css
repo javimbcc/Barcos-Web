@@ -12,3 +12,10 @@
 * {
   padding: 20px;
 }
+
+.detalles-text {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  text-align: center;
+}
