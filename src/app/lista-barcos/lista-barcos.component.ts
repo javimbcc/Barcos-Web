@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BarcoService } from '../barco.service';
 import { Barcos } from '../interface/interfazBarco';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-lista-barcos',
@@ -9,16 +11,20 @@ import { Barcos } from '../interface/interfazBarco';
 })
 export class ListaBarcosComponent implements OnInit {
   barcos: Barcos[] = [];
-  constructor(private barcoService: BarcoService) {}
+  constructor(
+    private barcoService: BarcoService
+  ) {}
 
   getBarcos(): void {
-    this.barcos = this.barcoService.getBarcos();
+    this.barcoService.getBarcos().subscribe(barco => this.barcos = barco);
   }
 
-   barcoSeleccionado?: Barcos;
-   onSelect(barco: Barcos) {
+  barcoSeleccionado?: Barcos;
+  onSelect(barco: Barcos) {
     this.barcoSeleccionado = barco;
-   }
+  }
 
-  ngOnInit(): void {this.getBarcos()}
+  ngOnInit(): void {
+    this.getBarcos();
+  }
 }

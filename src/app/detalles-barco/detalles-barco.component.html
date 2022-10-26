@@ -1,7 +1,7 @@
-<h2 class="detalles-text">DETALLES DE LOS BARCOS</h2>
 <div *ngIf="barco" class="detalles-div">
   <p>id: {{barco.id}}</p>
   <p>nombre: {{barco.nombre}}</p>
   <p>tipo: {{barco.tipo}}</p>
   <img src="${{barco.imagen}}" class="estilo-imagen">
 </div>
+<button type="button" (click)="goBack()">go back</button>
