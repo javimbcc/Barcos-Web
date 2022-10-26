@@ -5,3 +5,15 @@
 .subtitle {
   margin: 16px;
 }
+
+.nav-header {
+  padding: 16px;
+}
+
+.a-main-style {
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+  background-color: grey;
+  border-radius: 16px;
+}
