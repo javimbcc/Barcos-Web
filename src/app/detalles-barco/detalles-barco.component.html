@@ -1,7 +1,9 @@
 <div *ngIf="barco" class="detalles-div">
-  <p>id: {{barco.id}}</p>
-  <p>nombre: {{barco.nombre}}</p>
-  <p>tipo: {{barco.tipo}}</p>
-  <img src="${{barco.imagen}}" class="estilo-imagen">
+  <img src="${{ barco.imagen }}" class="estilo-imagen" />
+  <div>
+    <p class="p-data-barco">Id: {{ barco.id }}</p>
+    <p class="p-data-barco">Nombre: {{ barco.nombre }}</p>
+    <p class="p-data-barco">Tipo: {{ barco.tipo }}</p>
+  </div>
 </div>
 <button type="button" (click)="goBack()">go back</button>

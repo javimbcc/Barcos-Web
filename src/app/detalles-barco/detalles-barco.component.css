@@ -13,9 +13,14 @@
   padding: 20px;
 }
 
-.detalles-text {
-  align-items: center;
-  align-content: center;
+
+.barco-content {
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.p-data-barco {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
